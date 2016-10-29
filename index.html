@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -9,195 +9,276 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-<!--    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen"> -->
-    <link rel="stylesheet" type="text/css" href="stylesheets/22lab-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/22lab-light.css" media="screen">
     <script src="https://use.fontawesome.com/bcc2c81354.js"></script>
   </head>
 
   <body>
 
-<div class="wrapper">
+    <!-- nav bar -->
+    <nav id="navbar">
+      <li><a href="#home" class="nav-list-item">Home</a></li>
+      <li><a href="#about" class="nav-list-item">About</a></li>
+      <li><a href="#portfolio" class="nav-list-item">Portfolio</a></li>
+      <li><a href="#contact" class="nav-list-item">Contact</a></li>
+      <li><a href="http://blog.naver.com/h_myeongah" class="nav-list-item">Blog</a></li>
+    </nav>
 
-
-    <!-- nav-bar -->
-    <div id="nav-bar">
-      <div  class="nav-container">
-
-        <div class="toggle-nav"><i class="fa fa-bars"></i></div>
-        <ul class="nav-list">
-          <li class="active"><a href="javascript:alert('Comming Soon #home');" class="nav-list-item">Home</a></li>
-          <li><a href="javascript:alert('Comming Soon #about')" class="nav-list-item">About</a></li>
-          <li><a href="javascript:alert('Comming Soon #portfolio')" class="nav-list-item">Portfolio</a></li>
-          <li><a href="javascript:alert('Comming Soon #contact')" class="nav-list-item">Contact</a></li>
-          <li><a href="http://blog.naver.com/h_myeongah">Blog</a></li>
-        </ul>
-
-      </div> <!-- End of nav-container -->
-    </div> <!-- End of nav-bar -->
 
     <!-- Home -->
-    <div id="home" class="section">
-<!--
+    <div id="home" class="section bg">
+
       <div class="section-container">
         <div class="profile">
           <div class="profile-img"></div>
-          <h1>MyeongAh Hyeon</h1>
-          <p><u>Game Creator &amp; Game Designer</u></p>
-        </div> <!-- End of profile --> <!--
-        <div class="social-links">
-          <a href="//facebook.com/myeongah.hyeon" target="_blank"><i class="fa fa-facebook"></i></a>
-          <a href="//github.com/MyeongAh" target="_blank"><i class="fa fa-github"></i></a>
-        </div><!-- End of social-links -->
+          <h1 class="title-bright">MyeongAh Hyeon</h1>
+          <h2 class="title-bright">Game Creator &amp; Game Designer</h2>
+          <div class="square"><span>Hello! Comming Soon_</span></div>
+        </div> <!-- End of profile -->
       </div> <!-- End of section-container -->
 
     </div> <!-- End of Home -->
 
-    <!-- About --> <!--
-    <div id="about" class="section">
-      <div class="section-container">
-        <div class="intro">
-          <h1>My Name is MyeongAh Hyeon</h1>
-          <p>
-            I'm a game creator. This page is for my portfolio.
-          </p>
-        </div>
 
+    <!-- About -->
+    <div id="about" class="section">
+
+      <div class="section-container">
+        <div class="intro three">
+          <h1 class="icon">[]</h1>
+          <h1 class="ability">Game Design</h1>
+          <p> Degital Multimedia, Game Design, Media and Human, Introduction to Game Design, Interaction Design, Game Storytelling, Physical Interaction Design</p>
+        </div>
+        <div class="intro three">
+          <h1 class="icon">[]</h1>
+          <h1 class="ability">Game Programming</h1>
+          <p>Discrete Mathematics, Computer Programming, Design of Computer Program, Game Programming1, Data Structure, OOP with Java, WebApp Programming, Mobile Programming, Computer Graphics, Social Media Programming, App Project, Media Project, Algorithm, Animation Theory</p>
+        </div>
+        <div class="intro three">
+          <h1 class="icon">[]</h1>
+          <h1 class="ability">Graphic Design</h1>
+          <p>Foundation of Design, Computer Animation, Graphic Design, Digital Typography, Animation Aesthetics, New Media and Motion Graphics, Croquis</p>
+        </div>
+        <div class="responsivegroup"></div>
+        <div class="group"></div>
+      </div> <!-- End of section-container -->
+
+      <div class="section-container bga">
         <div class="skills">
           <h2 class="title">My Skills</h2>
-
-          <ul>
-            <li> <!-- Graphic Design Tools --> <!--
-              Graphic Design tools
-              <ul class="level-gauge">
-                <li><span class="skill-bar">90%</span><u>Photoshop</u></li>
-                <li><span class="skill-bar">90%</span><u>Illustrator</u></li>
-                <li><span class="skill-bar">35%</span><u>Maya</u></li>
+          <ul id="skill">
+            <li> <!-- Graphic Design Tools -->
+              <h4>Graphic Design tools</h4>
+              <ul class="skill-bar">
+                <li> Photoshop
+                  <div class="bar-container">
+                    <span class="level-gauge" data-bar='{ "color": "#19f" }'>
+                      <span class="percentage">90%</span>
+                    </span>
+                  </div>
+                </li>
+                <li> Illustrator
+                  <div class="bar-container">
+                    <span class="level-gauge" data-bar='{ "color": "#c8be15" }'>
+                      <span class="percentage">90%</span>
+                    </span>
+                  </div>
+                </li>
+                <li> After Effect
+                  <div class="bar-container">
+                    <span class="level-gauge" data-bar='{ "color": "#9e12a6" }'>
+                      <span class="percentage">65%</span>
+                    </span>
+                  </div>
+                </li>
               </ul>
-            </li> <!-- End of Graphic design Tools--> <!--
+            </li> <!-- End of Graphic design Tools-->
 
-            <li> <!-- Web Develop --> <!--
-              Web Development
-              <ul class="level-gauge">
-                <li><span class="skill-bar">70%</span><u>Html5</u></li>
-                <li><span class="skill-bar">70%</span><u>CSS</u></li>
-                <li><span class="skill-bar">70%</span><u>javascript</u></li>
+            <li> <!-- Web Develop -->
+              <h4>Web Development</h4>
+              <ul class="skill-bar">
+                <li> Html5
+                  <div class="bar-container">
+                    <span class="level-gauge" data-bar='{ "color": "#ffb033" }'>
+                      <span class="percentage">70%</span>
+                    </span>
+                  </div>
+                </li>
+                <li> CSS
+                  <div class="bar-container">
+                    <span class="level-gauge" data-bar='{ "color": "#6f8fbf" }'>
+                      <span class="percentage">70%</span>
+                    </span>
+                  </div>
+                </li>
+                <li> Javascript
+                  <div class="bar-container">
+                    <span class="level-gauge" data-bar='{ "color": "#6fbf9f" }'>
+                      <span class="percentage">70%</span>
+                    </span>
+                  </div>
+                </li>
               </ul>
-            </li> <!-- End of Web Develop --> <!--
+            </li> <!-- End of Web Develop -->
 
-            <li> <!-- Programming Languages --> <!--
-              Programming Languages
-              <ul class="level-gauge">
-                <li><span class="skill-bar">80%</span><u>C/C++</u></li>
-                <li><span class="skill-bar">80%</span><u>Java</u></li>
-                <li><span class="skill-bar">30%</span><u>Python</u></li>
+            <li> <!-- Programming Languages -->
+              <h4>Programming Languages</h4>
+              <ul class="skill-bar">
+                <li> C/C++
+                  <div class="bar-container">
+                    <span class="level-gauge" data-bar='{ "color": "#f3e19e" }'>
+                      <span class="percentage">80%</span>
+                    </span>
+                  </div>
+                </li>
+                <li> Java
+                  <div class="bar-container">
+                    <span class="level-gauge" data-bar='{ "color": "#ffdac0" }'>
+                      <span class="percentage">80%</span>
+                    </span>
+                  </div>
+                </li>
+                <li> Python
+                  <div class="bar-container">
+                    <span class="level-gauge" data-bar='{ "color": "#8ef0ff" }'>
+                      <span class="percentage">30%</span>
+                    </span>
+                  </div>
+                </li>
               </ul>
-            </li> <!-- End of Programming Languages --> <!--
+            </li> <!-- End of Programming Languages -->
 
-            <li> <!-- Game Engine --> <!--
-              Game Engine
-              <ul class="level-gauge">
-                <li><span class="skill-bar">75%</span><u>Unity3d</u></li>
-                <li><span class="skill-bar">95%</span><u>GameSalad</u></li>
-                <li><span class="skill-bar">20%</span><u>Unreal Engine</u></li>
+            <li> <!-- Game Engine -->
+              <h4>Game Engine</h4>
+              <ul class="skill-bar">
+                <li> Unity3d
+                  <div class="bar-container">
+                    <span class="level-gauge" data-bar='{ "color": "#c4ccff" }'>
+                      <span class="percentage">75%</span>
+                    </span>
+                  </div>
+                </li>
+                <li> GameSalad
+                  <div class="bar-container">
+                    <span class="level-gauge" data-bar='{ "color": "#c4ffda" }'>
+                      <span class="percentage">95%</span>
+                    </span>
+                  </div>
+                </li>
+                <li> Unreal
+                  <div class="bar-container">
+                    <span class="level-gauge" data-bar='{ "color": "#dac4ff" }'>
+                      <span class="percentage">20%</span>
+                    </span>
+                  </div>
+                </li>
               </ul>
-            </li> <!-- End of Game Engine --> <!--
-          </ul>
+            </li> <!-- End of Game Engine -->
 
-    <!-- Portfolio --> <!--
+          </ul> <!-- End of skill -->
+
+        </div> <!-- End of skills -->
+      </div> <!-- End of section-container -->
+
+    </div> <!-- End of about -->
+
+
+    <!-- Portfolio -->
     <div id="portfolio" class="section">
       <div class="section-container">
+
         <div class="title"><h2>My Projects</h2></div>
 
-        <div class="thumbnails">
-          <ul>
-            <li> <!-- project 1 --> <!--
-              <a href="#" target="_blank">
-                <img src="http://www.alanbarnesfineart.com/wp-content/uploads/2015/04/placeholder-Copy-4.png" alt="placeholder" />
-                <span>
-                  <h3>Title</h3>
-                  <p>Description</p>
-                  <i class="fa fa-link"></i>
-                </span>
-              </a>
-            </li> <!-- end of project 1 --> <!--
-
-            <li> <!-- project 2 --> <!--
-              <a href="#" target="_blank">
-                <img src="https://placeholdit.imgix.net/~text?txtsize=23&bg=000000&txt=250%C3%97250&w=250&h=250" alt="placeholder" />
-                <span>
-                  <h3>Title</h3>
-                  <p>Description</p>
-                  <i class="fa fa-link"></i>
-                </span>
-              </a>
-            </li> <!-- end of project 2 --> <!--
-
-            <li> <!-- project 3 --> <!--
-              <a href="#" target="_blank">
-                <img src="https://placeholdit.imgix.net/~text?txtsize=23&bg=000000&txt=250%C3%97250&w=250&h=250" alt="placeholder" />
-                <span>
-                  <h3>Title</h3>
-                  <p>Description</p>
-                  <i class="fa fa-link"></i>
-                </span>
-              </a>
-            </li> <!-- end of project 3 --> <!--
-
-            <li> <!-- project 4 --> <!--
-              <a href="#" target="_blank">
-                <img src="https://placeholdit.imgix.net/~text?txtsize=23&bg=000000&txt=250%C3%97250&w=250&h=250" alt="placeholder" />
-                <span>
-                  <h3>Title</h3>
-                  <p>Description</p>
-                  <i class="fa fa-link"></i>
-                </span>
-              </a>
-            </li> <!-- end of project 4 --> <!--
-
-          </ul>
-        </div><!-- end of thumnails --> <!--
-
-      </div><!-- end of section-container --> <!--
-    </div><!-- end of Portfolio --> <!--
-
-    <!-- Contact --> <!--
-    <div id="contact" class="section">
-      <div class="section-container">
-        <div class="title">
-          <h2>Contact Me :)</h2>
+        <!-- Project 1 -->
+        <div class="intro three bg nopad pointer">
+          <div class="imgholder"></div>
+          <h1 class="feature">Project 1</h1>
+          <p>Comming Soon</p>
         </div>
+        <!-- Project 2 -->
+        <div class="intro three bg nopad pointer">
+          <div class="imgholder"></div>
+          <h1 class="feature">Project 2</h1>
+          <p>Comming Soon</p>
+        </div>
+        <!-- Project 3 -->
+        <div class="intro three bg nopad pointer">
+          <div class="imgholder"></div>
+          <h1 class="feature">Project 3</h1>
+          <p>Comming Soon</p>
+        </div>
+        <!-- Project 4 -->
+        <div class="intro three bg nopad pointer">
+          <div class="imgholder"></div>
+          <h1 class="feature">Project 4</h1>
+          <p>Comming Soon</p>
+        </div>
+        <!-- Project 5 -->
+        <div class="intro three bg nopad pointer">
+          <div class="imgholder"></div>
+          <h1 class="feature">Project 5</h1>
+          <p>Comming Soon</p>
+        </div>
+        <!-- Project 6 -->
+        <div class="intro three bg nopad pointer">
+          <div class="imgholder"></div>
+          <h1 class="feature">Project 6</h1>
+          <p>Comming Soon</p>
+        </div>
+        <div class="group"></div>
 
-        <div class="form-container">
-          <form action="#project-form">
-            <div class="form-group profile-img">
-              <input required id="name" type="text" name="name" placeholder="What's your name?">
-            </div>
-            <div class="form-group profile-img">
-              <input required id="email" type="email" name="email" placeholder="What's your e-mail address?">
-            </div>
-            <div class="form-group profile-img">
-              <input required id="subject" type="text" name="subject" placeholder="Subject">
-            </div>
-            <div class="form-group profile-img">
-              <textarea required id="description" type="text" name="description" placeholder="Description">
-              </textarea>
-            </div>
-            <div class="form-group profile-img">
-              <button type="reset" class="btn clear" name="clear">Clear</button>
-              <button type="submit" class="btn action" name="submit">Send</button>
-            </div>
-          </form><!-- end of form --> <!--
-        </div><!-- end of form-container --> <!--
+      </div><!-- end of section-container -->
+    </div><!-- end of Portfolio -->
 
-      </div><!-- end of section-container --> <!--
-    </div> <!-- end of Contact --> <!--
+    <!-- Contact -->
+    <div id="contact" class="section">
+      <div class="section-container bga">
 
+        <section id="hire">
+          <div class="title"><h2>Contact</h2></div>
+          <div class="form-container">
+            <form method="get" action="mailto:mohyun1004@gmail.com" enctype="text/plain">
+              <input type="text" name="subject" placeholder="Subject" />
+              <input type="text" name="name" placeholder="Name"/>
+              <input type="text" name="email" placeholder="example@email.com" />
+              <textarea name="msg" rows="4" placeholder="Your message goes here."></textarea>
+              <input class="button" type="submit" value="Send" />
+              <input type="hidden" name="body" />
+            </form><!-- end of form -->
+          </div><!-- end of form-container -->
+        </section>
+
+      </div><!-- end of section-container -->
+    </div> <!-- end of Contact -->
+
+    <!-- Footer -->
     <div id="footer" class="section">
-      <h5>Made by MyeongAh Hyeon 2016</h5>
-    </div>
+      <div class="footer">
+        <div class="section-container">
+          <div class="intro four left">
+            <h2 class="title-bright">Contact Me</h1>
+            <p class="title-bright">kakao talk ID : Comming Soon.</p>
+          </div>
+          <div class="intro four left">
+            <h2 class="title-bright"></h1>
+            <p class="title-bright"></p>
+          </div>
+          <div class="intro four left">
+            <h2 class="title-bright"></h1>
+            <p class="title-bright"></p>
+          </div>
+          <div class="intro four left">
+            <h2 class="title-bright"></h1>
+            <p class="title-bright"></p>
+          </div>
+        </div> <!-- end of section-container -->
+      </div> <!-- end of footer -->
+    </div> <!-- end of section-->
 
-    <script type="text/javascript" src="javascripts/scrolling.js"></script>
-</div> <!-- end of wrapper -->
+    <!-- Using JQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Load My javascript files -->
+    <script type="text/javascript" src="js/22labjs.js"></script>
 
   </body>
 
