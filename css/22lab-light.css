@@ -10,6 +10,12 @@ $color-lightred: #BF776F;
 $color-bright: #DEDED3;
 */
 
+/* font setting */
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+:lang(ko) {
+  font-family: 'Noto Sans KR', sans-serif;
+}
 
 /* Basic Setting */
 html,
@@ -196,6 +202,10 @@ h2.title-bright {
   text-align: left;
 }
 
+.intro #FAicon {
+  margin-top: 28px;
+}
+
 .intro .icon {
   border-radius: 50%;
   height: 85px;
@@ -210,7 +220,6 @@ h2.title-bright {
   position: absolute;
   padding: 0;
   margin: 0;
-  top: -15px;
   height: 50px;
   width: 50px;
 }
@@ -242,7 +251,7 @@ h2.title-bright {
 .intro .imgholder {
   height: 300px;
   width: 100%;
-  background: #333;
+  background: #fff;
   transition: background 0.3s linear;
 }
 
@@ -255,7 +264,7 @@ h2.title-bright {
 }
 
 .intro.bg:hover .imgholder {
-  background: #555;
+  background: #ddd;
 }
 
 .intro span.feature {
@@ -307,6 +316,77 @@ ul {
   transition: opacity 0.3s linear;
 }
 /* end of Skills */
+
+/* Portfolio */
+
+.intro img {
+  height: 300px;
+  width: 100%;
+  background: #fff;
+  transition: background 0.3s linear;
+}
+
+/* Image Zoom */
+.lightModal {
+  position: fixed;
+  margin-bottom: 5em;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.8s ease;
+          transition: all 0.8s ease;
+}
+.lightModal .lightModal-inner {
+  display: block;
+  width: 75%;
+  height: 75%;
+  margin: 0 auto;
+  padding: 0;
+}
+.lightModal .lightModal-inner .lightModal-title {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+.lightModal .lightModal-inner .lightModal-close {
+  position: fixed;
+  margin-top: 2em;
+  top: 0.2em;
+  right: 0.2em;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  font-size: 3em;
+  line-height: 1;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #464646;
+}
+.lightModal .lightModal-inner .lightModal-close:hover {
+  color: #f55;
+}
+.lightModal .lightModal-inner .lightModal-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.show {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.8s ease;
+          transition: all 0.8s ease;
+}
+
+#LinktoBlog {
+  top: 3em;
+  position: relative;
+  float: right;
+}
+
+/* end of portfolio */
 
 /* Contact */
 form{

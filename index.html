@@ -15,15 +15,20 @@
 
   <body>
 
+<!--
+    Reference from Codepen.io
+          Entire Layout : Every modern website / A PEN BY Andrew Tunnecliffe (http://codepen.io/atunnecliffe/)
+          Skill Bar     : jQuery - Animated Skill Bars / A PEN BY Brian (http://codepen.io/bdean531/)
+-->
+
     <!-- nav bar -->
     <nav id="navbar">
       <li><a href="#home" class="nav-list-item">Home</a></li>
       <li><a href="#about" class="nav-list-item">About</a></li>
       <li><a href="#portfolio" class="nav-list-item">Portfolio</a></li>
       <li><a href="#contact" onClick="alert('Contact Comming Soon'); return true" class="nav-list-item">Contact</a></li>
-      <li onclick="location.href='http://blog.naver.com/h_myeongah'" target="_blank"><a class="nav-list-item">Blog</a></li>
+      <li onclick="window.open('http://blog.naver.com/h_myeongah')"><a class="nav-list-item">Blog</a></li>
     </nav>
-
 
     <!-- Home -->
     <div id="home" class="section bg">
@@ -33,7 +38,7 @@
           <div class="profile-img"></div>
           <h1 class="title-bright">MyeongAh Hyeon</h1>
           <h2 class="title-bright">Game Creator &amp; Game Designer</h2>
-          <a><div class="square" onclick="location.href='http://blog.naver.com/h_myeongah'" target="_blank"><span>Hello! Go to my blog!</span></div></a>
+          <a><div class="square" onclick="window.open('http://blog.naver.com/h_myeongah')" ><span>Hello! Go to my blog!</span></div></a>
         </div> <!-- End of profile -->
       </div> <!-- End of section-container -->
 
@@ -45,17 +50,17 @@
 
       <div class="section-container">
         <div class="intro three">
-          <h1 class="icon">O</h1>
+          <h1 class="icon"><div id="FAicon" class="fa fa-gamepad" aria-hidden="true"></div></h1>
           <h1 class="ability">Game Design</h1>
           <p> Degital Multimedia, Game Design, Media and Human, Introduction to Game Design, Interaction Design, Game Storytelling, Physical Interaction Design</p>
         </div>
         <div class="intro three">
-          <h1 class="icon">O</h1>
+          <h1 class="icon"><div id="FAicon" class="fa fa-laptop" aria-hidden="true"></div></h1>
           <h1 class="ability">Game Programming</h1>
           <p>Discrete Mathematics, Computer Programming, Design of Computer Program, Game Programming1, Data Structure, OOP with Java, WebApp Programming, Mobile Programming, Computer Graphics, Social Media Programming, App Project, Media Project, Algorithm, Animation Theory</p>
         </div>
         <div class="intro three">
-          <h1 class="icon">O</h1>
+          <h1 class="icon"><div id="FAicon" class="fa fa-paint-brush" aria-hidden="true"></div></h1>
           <h1 class="ability">Graphic Design</h1>
           <p>Foundation of Design, Computer Animation, Graphic Design, Digital Typography, Animation Aesthetics, New Media and Motion Graphics, Croquis</p>
         </div>
@@ -124,17 +129,17 @@
             <li> <!-- Programming Languages -->
               <h4>Programming Languages</h4>
               <ul class="skill-bar">
-                <li> C/C++
+                <li> C
                   <div class="bar-container">
                     <span class="level-gauge" data-bar='{ "color": "#f3e19e" }'>
                       <span class="percentage">70%</span>
                     </span>
                   </div>
                 </li>
-                <li> Java
+                <li> Java/C++
                   <div class="bar-container">
                     <span class="level-gauge" data-bar='{ "color": "#ffdac0" }'>
-                      <span class="percentage">70%</span>
+                      <span class="percentage">55%</span>
                     </span>
                   </div>
                 </li>
@@ -184,48 +189,71 @@
 
 
     <!-- Portfolio -->
-    <div id="portfolio" class="section">
+    <div id="portfolio" class="section" lang="ko">
       <div class="section-container">
 
         <div class="title"><h2>My Projects</h2></div>
 
         <!-- Project 1 -->
         <div class="intro three bg nopad pointer">
-          <div class="imgholder"></div>
-          <h1 class="feature">Project 1</h1>
-          <p>Comming Soon</p>
+          <div class="imgholder">
+            <a class="lightCustom" href="https://goo.gl/m2BzEv" title="딥러닝을 활용한 게임봇 연구">
+              <img src="https://goo.gl/m2BzEv" /></a></div>
+          <h1 class="feature">딥러닝을 활용한 게임봇 연구 <a id="detailLink" class="fa fa-link" aria-hidden="true" onclick="window.open('https://goo.gl/yDZg82')"></a></h1>
+          <p>딥러닝을 통한 게임봇 연구는 딥러닝을 통해 훈련 받은 AI가 훈련상황과 다른 상황에서 얼마나 사람처럼 잘 대처하는 가에 대하여 연구한 것입니다.</p>
         </div>
         <!-- Project 2 -->
         <div class="intro three bg nopad pointer">
-          <div class="imgholder"></div>
-          <h1 class="feature">Project 2</h1>
-          <p>Comming Soon</p>
+          <div class="imgholder">
+            <a class="lightCustom" href="https://goo.gl/DwxfWl" title="DEEP">
+              <img src="https://goo.gl/DwxfWl" /></a></div>
+          <h1 class="feature">DEEP <a id="detailLink" class="fa fa-link" aria-hidden="true" onclick="window.open('https://goo.gl/9727k9')"></a></h1>
+          <p>DEEP은 정부의 음모로 심해 잠수함에서 연구를 진행하게 된 인물들의 이야기를 다루는 PC기반의 RPG 게임입니다. 잠수함과 괴 생명체에 얽힌 여러 비밀을 파헤치고 무사히 탈출하는 것이 목적입니다.</p>
         </div>
         <!-- Project 3 -->
         <div class="intro three bg nopad pointer">
-          <div class="imgholder"></div>
-          <h1 class="feature">Project 3</h1>
-          <p>Comming Soon</p>
+          <div class="imgholder">
+            <a class="lightCustom" href="https://goo.gl/5BYyXe" title="Plant Your Planet">
+              <img src="https://goo.gl/5BYyXe" /></a></div>
+          <h1 class="feature">Plant Your Planet <a id="detailLink" class="fa fa-link" aria-hidden="true" onclick="window.open('https://goo.gl/DwWs3c')"></a></h1>
+          <p>Plant Your Planet은 논게이머를 위한 게임입니다. 일상적인 행동이 게임 활동으로 이어지도록 하여 짧은 시간이라도 게임에 참여하고 진행시켜 가면서 게임을 하는 것에 부담감을 느끼지 않도록 하였습니다.</p>
         </div>
         <!-- Project 4 -->
         <div class="intro three bg nopad pointer">
-          <div class="imgholder"></div>
-          <h1 class="feature">Project 4</h1>
-          <p>Comming Soon</p>
+          <div class="imgholder">
+            <a class="lightCustom" href="https://goo.gl/8IIkAi" title="Upground BI/CI">
+              <img src="https://goo.gl/8IIkAi" /></a></div>
+          <h1 class="feature">Upground BI/CI <a id="detailLink" class="fa fa-link" aria-hidden="true" onclick="window.open('https://goo.gl/UN3z6E')"></a></h1>
+          <p>소프트웨어 교육 그룹 Upground의 CI와 이를 활용한 명함 및 소개 책자를 작업한 결과물입니다.</p>
         </div>
         <!-- Project 5 -->
         <div class="intro three bg nopad pointer">
-          <div class="imgholder"></div>
-          <h1 class="feature">Project 5</h1>
-          <p>Comming Soon</p>
+          <div class="imgholder">
+            <a class="lightCustom" href="https://goo.gl/PVA1Km" title="홍보 모션그래픽 제작">
+              <img src="https://goo.gl/PVA1Km" /></a></div>
+          <h1 class="feature">홍보 모션그래픽 제작 <a id="detailLink" class="fa fa-link" aria-hidden="true" onclick="window.open('https://goo.gl/e9W5Jr')"></a></h1>
+          <p>애프터이펙트와 일러스트레이터를 활용한 모션그래픽 홍보 영상입니다. 과일컵 <후룻> 홍보, 허리 건강 서적 <백년 허리> 홍보, 동아리 <원천동밸리> 홍보가 있습니다.</p>
         </div>
         <!-- Project 6 -->
         <div class="intro three bg nopad pointer">
-          <div class="imgholder"></div>
-          <h1 class="feature">Project 6</h1>
-          <p>Comming Soon</p>
+          <div class="imgholder">
+            <a class="lightCustom" href="https://goo.gl/3XhEvg" title="스마트 지오보드">
+              <img src="https://goo.gl/3XhEvg" /></a></div>
+          <h1 class="feature">스마트 지오보드 <a id="detailLink" class="fa fa-link" aria-hidden="true" onclick="window.open('https://goo.gl/fMaKrN')"></a></h1>
+          <p>스마트 지오보드는 2013년도 중소기업청 이공계창업꿈나무 과제에 선정되어 진행한 프로젝트입니다. 스마트 폰 앱과 교육 교구인 지오보드를 연동하여 효과적으로 학습하는 환경을 마련하는 데에 그 목적이 있습니다.</p>
         </div>
         <div class="group"></div>
+        <a id="LinktoBlog"><div class="square" onclick="window.open('http://blog.naver.com/h_myeongah')" ><span> More Portfolio </span></div></a>
+
+        <!-- lightModal -->
+				<div class="lightModal">
+					<div class="lightModal-inner">
+						<button class="lightModal-close" role="button">&times;</button>
+						<h3 class="lightModal-title">Title here</h3>
+						<img class="lightModal-image" src="http://webauthoring.ajou.ac.kr/~id201321112/WBbi.png" alt="Title here">
+					</div>
+				</div>
+				<!-- End of lightModal -->
 
       </div><!-- end of section-container -->
     </div><!-- end of Portfolio -->

@@ -61,3 +61,40 @@ $(function scrolly(){
 
 })( jQuery );
 /* end of Skill Gauge */
+
+/* Galley Image Zoom */
+// get all links
+var links = document.querySelectorAll('.lightCustom'),
+// make array
+arrayOfLinks = Array.prototype.slice.call(links);
+// loop
+Array.prototype.forEach.call(arrayOfLinks,function(obj,index){
+  // open modal on click
+  obj.addEventListener('click',function(e){
+    e.preventDefault();
+    // if not title show no title
+    var title = (obj.title) ? obj.title : 'This not have title';
+    // add class show
+    document.querySelector('.lightModal').classList.add('show');
+    // add title in modal with title=""
+    document.querySelector('.lightModal-title').innerHTML = title;
+    // get href and add in image modal
+    document.querySelector('.lightModal-image').src = obj.href;
+    // add title in alt image
+    document.querySelector('.lightModal-image').alt = title;
+  });
+  // close modal
+  document.querySelector('.lightModal-close').addEventListener('click',function(e){
+    e.preventDefault();
+    // remove class="show"
+    document.querySelector('.lightModal').classList.remove('show');
+    // remove title
+    document.querySelector('.lightModal-title').innerHTML = '';
+    // remove src
+    document.querySelector('.lightModal-image').src = '';
+    // remove alt
+    document.querySelector('.lightModal-image').alt = '';
+  });
+
+});
+/* end of Galley Image Zoom */
