@@ -84,7 +84,7 @@ Array.prototype.forEach.call(arrayOfLinks,function(obj,index){
     document.querySelector('.lightModal-image').alt = title;
   });
   // close modal
-  document.querySelector('.lightModal-close').addEventListener('click',function(e){
+  document.querySelector('.lightModal').addEventListener('click',function(e){
     e.preventDefault();
     // remove class="show"
     document.querySelector('.lightModal').classList.remove('show');
