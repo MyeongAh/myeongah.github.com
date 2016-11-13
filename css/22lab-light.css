@@ -54,6 +54,7 @@ body {
 
 .title {
   color: #444;
+  margin-left: 50px;
 }
 /* end of basic setting */
 
@@ -244,6 +245,10 @@ h2.title-bright {
   text-align: center;
 }
 
+.intro p {
+  text-align: left;
+}
+
 .group.margin {
   margin-bottom: 20px;
 }
@@ -413,6 +418,10 @@ textarea {
   background-color: #46C7C0;
 }
 
+#hire h3 {
+  margin-left: 50px;
+}
+
 /* Footer */
 .footer {
   background: #3A3049;
@@ -420,6 +429,10 @@ textarea {
 p.title-bright {
   float: left;
   color: #fafafa;
+}
+
+footer {
+  text-align: center;
 }
 
 /* Responsive Web */
