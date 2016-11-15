@@ -5,9 +5,12 @@
 $color-point: #46C7C0;
 $color-light: #D6DFE8;
 $color-dark: #3A3049;
+$color-orange: #ff5f00;
+&color-deepblue: #29407C;
 $color-deepred: #703644;
 $color-lightred: #BF776F;
 $color-bright: #DEDED3;
+$color-black: #232222;
 */
 
 /* font setting */
@@ -32,7 +35,7 @@ body {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  color: #444;
+  color: #232222;
   font-size: 14px;
   font-weight: 300;
   overflow: hidden;
@@ -45,7 +48,7 @@ body {
 }
 
 .section.bg {
-  background: #3A3049;
+  background: #232222;
 }
 
 .section-container.bga {
@@ -53,7 +56,7 @@ body {
 }
 
 .title {
-  color: #444;
+  color: #ff5f00;
   margin-left: 50px;
 }
 /* end of basic setting */
@@ -94,7 +97,7 @@ nav li{
 .nav-list-item:hover,
 .nav-list-item.current {
   cursor: pointer;
-  color: #46C7C0;
+  color: #ff5f00;
 }
 
 .fixedAtTop{
@@ -133,6 +136,7 @@ h1.title-bright::after {
 h2.title-bright {
   font-size: 24px;
   margin-bottom: 48px;
+  color: #ff5f00;
 }
 
 .square {
@@ -226,8 +230,8 @@ h2.title-bright {
 }
 
 .intro:hover > .icon {
-  background: #46C7C0;
-  color: initial;
+  background: #ff5f00;
+  color: white;
 }
 
 .intro:hover > .icon.side {
@@ -415,7 +419,8 @@ textarea {
 }
 
 .button {
-  background-color: #46C7C0;
+  color: #fafafa;
+  background-color: #29407C;
 }
 
 #hire h3 {
@@ -424,7 +429,7 @@ textarea {
 
 /* Footer */
 .footer {
-  background: #3A3049;
+  background: #232222;
 }
 p.title-bright {
   float: left;
